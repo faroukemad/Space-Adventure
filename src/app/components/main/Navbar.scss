@@ -1,0 +1,55 @@
+
+.projectsTop{
+    font-size: 30px;
+    background: none;
+    color: black;
+    text-decoration: none;
+    transition: all 1s ease-out;
+}
+.nav-com {
+    color: #FFFFFF;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    flex-grow: 1;
+    font-weight: bold;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+      
+        // text element inside
+        .nav-comp {
+        display: block;
+        color: #7042f861;
+  
+        transition: transform 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); } 
+        
+        // slide text from data-link-title
+        &:after {
+        content: attr(data-link-alt);
+        display: inline;
+        position: absolute;
+        transition: top 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        top: 100%;
+        left: 0;
+        right: 0;
+        text-align: center; }
+        
+        // animation when hovered
+        &:hover {
+        cursor: pointer;
+  
+          span {
+          transform: translateY(-100%); }
+          
+          &:after {
+          top: 0; }
+        }
+      
+        &:active {
+        animation-name: rubberBand;
+        cursor: pointer; }
+  
+    }
