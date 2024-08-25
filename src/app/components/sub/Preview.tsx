@@ -4,6 +4,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utilits/motion'
 import { SparklesIcon } from '@heroicons/react/16/solid'
+import Image from 'next/image'
+
 const HeroContent = () => {
     return (
         <motion.div className='flex flex-col-reverse md:flex-row items-center gap-10 md:gap-0 justify-center md:px-20 px-10 mt-20 w-full z-[20]' initial='hidden' animate="visible" id='home'>
@@ -12,7 +14,9 @@ const HeroContent = () => {
                 <motion.div className="flex flex-col gap-6 md:text-6xl text-center md:text-start text-3xl font-bold text-white max-w-[600px] w-auto h-auto" variants={slideInFromLeft(0.5)}>
                     <span>
                         The Future of
-                        <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'> Space </span>
+                        <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
+                            Space
+                        </span>
                         Exploration
                     </span>
                 </motion.div>
@@ -27,7 +31,7 @@ const HeroContent = () => {
             </div>
 
             <motion.div className="w-full h-full flex justify-center items-center" variants={slideInFromRight(0.8)}>
-                <img src="/astro.png" alt="icons" height={50} width={350} />
+                <Image src="/astro.png" alt="icons" height={50} width={350} />
             </motion.div>
         </motion.div>
     )
