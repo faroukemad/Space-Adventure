@@ -47,7 +47,7 @@ To Visit App:
 
 ## Screenshot:
 
-![Screenshot (195)](https://github.com/user-attachments/assets/c52c439f-8567-46c9-95e0-6bd9e25af37a)
+![space](https://github.com/user-attachments/assets/3caa56ae-894b-43d0-b329-e1f19fbc0935)
 
 ## Live link:
 
