@@ -13,11 +13,11 @@ const HeroContent = () => {
 
                 <motion.div className="flex flex-col gap-6 md:text-6xl text-center md:text-start text-3xl font-bold text-white max-w-[600px] w-auto h-auto" variants={slideInFromLeft(0.5)}>
                     <span>
-                        The Future of
+
                         <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
-                            Space
+                             Space Exploration 
                         </span>
-                        Exploration
+
                     </span>
                 </motion.div>
                 <motion.p className='text-lg text-gray-400 my-5 max-w-[600px] text-center md:text-start' variants={slideInFromLeft(0.8)}>
